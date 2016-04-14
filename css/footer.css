@@ -1,0 +1,104 @@
+/* line 11, ../../scss/module/footer.scss */
+.m-footer {
+  height: 580px;
+  width: 100%;
+  background: url(../img/footer.jpg) no-repeat center center;
+  letter-spacing: 1px;
+}
+/* line 18, ../../scss/module/footer.scss */
+.m-footer .m-footer-content {
+  margin-top: 90px;
+}
+/* line 2, ../../scss/module/footer.scss */
+.m-footer .m-footer-content:before, .m-footer .m-footer-content:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../../scss/module/footer.scss */
+.m-footer .m-footer-content:after {
+  clear: both;
+}
+/* line 22, ../../scss/module/footer.scss */
+.m-footer .m-footer-content > div {
+  float: left;
+}
+/* line 25, ../../scss/module/footer.scss */
+.m-footer .m-footer-content p {
+  margin: 0;
+}
+/* line 28, ../../scss/module/footer.scss */
+.m-footer .m-footer-content .m-footer-header {
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+/* line 35, ../../scss/module/footer.scss */
+.m-footer .m-footer-content .m-footer-text {
+  font-size: 14px;
+  color: #c8c8c8;
+  line-height: 32px;
+}
+/* line 40, ../../scss/module/footer.scss */
+.m-footer .m-footer-content .m-footer-intro {
+  width: 320px;
+  margin-left: 70px;
+}
+/* line 44, ../../scss/module/footer.scss */
+.m-footer .m-footer-content .m-footer-contact {
+  margin-left: 160px;
+  width: 320px;
+}
+/* line 48, ../../scss/module/footer.scss */
+.m-footer .m-footer-content .m-footer-wechat {
+  margin-left: 125px;
+  width: 100px;
+}
+/* line 52, ../../scss/module/footer.scss */
+.m-footer .m-footer-content .m-footer-qrcode {
+  width: 100px;
+  height: 100px;
+  background: url(../img/icons-front.png) no-repeat -240px -1px;
+}
+/* line 58, ../../scss/module/footer.scss */
+.m-footer .m-footer-logo {
+  margin: 0 auto;
+  height: 60px;
+  padding-left: 372px;
+  margin-top: 140px;
+}
+/* line 64, ../../scss/module/footer.scss */
+.m-footer .m-footer-logo > div {
+  float: left;
+}
+/* line 67, ../../scss/module/footer.scss */
+.m-footer .m-footer-logo .m-footer-logo-1 {
+  width: 160px;
+  height: 100%;
+  background: url(../img/icons-front.png) no-repeat 0 -200px;
+}
+/* line 72, ../../scss/module/footer.scss */
+.m-footer .m-footer-logo .m-footer-logo-2 {
+  width: 215px;
+  height: 100%;
+  background: url(../img/icons-front.png) no-repeat -160px -200px;
+}
+/* line 77, ../../scss/module/footer.scss */
+.m-footer .m-footer-logo .m-footer-logo-split {
+  margin: 18px 40px 0 40px;
+  height: 24px;
+  width: 0;
+  border-right: solid 1px #484c4d;
+}
+/* line 84, ../../scss/module/footer.scss */
+.m-footer .m-copyright {
+  color: #c8c8c8;
+  font-size: 12px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=footer.css.map */

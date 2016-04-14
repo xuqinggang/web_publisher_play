@@ -1,0 +1,148 @@
+
+.g-body {
+  min-width: 1200px;
+}
+
+/* line 4, ../scss/module/_index.scss */
+.g-container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+/* line 2, ../scss/module/footer.scss */
+.g-container:before, .g-container:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../scss/module/footer.scss */
+.g-container:after {
+  clear: both;
+}
+
+/* line 13, ../scss/module/_index.scss */
+.f-body-init .m-nav {
+  background-color: rgba(24, 30, 34, 0.3);
+  border-color: #3c4d57;
+}
+
+/* line 18, ../scss/module/_index.scss */
+.u-btn {
+  display: inline-block;
+  background-color: #42a5f6;
+  border-radius: 3px;
+  letter-spacing: 6px;
+  padding-left: 6px;
+  text-align: center;
+}
+/* line 26, ../scss/module/_index.scss */
+.u-btn:hover, .u-btn:focus {
+  background-color: #3b93db;
+  color: #fff;
+}
+
+/* line 31, ../scss/module/_index.scss */
+.u-btn-apply {
+  height: 50px;
+  width: 210px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 48px;
+  padding-left: 26px;
+  margin-top: 60px;
+}
+/* line 40, ../scss/module/_index.scss */
+.u-btn-apply > span {
+  background: url(../img/icons-front.png) no-repeat -40px 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+/* line 49, ../scss/module/_index.scss */
+.u-btn-more {
+  width: 190px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+
+/* line 57, ../scss/module/_index.scss */
+.u-btn-more-disabled, .u-btn-more-disabled:hover, .u-btn-more-disabled:focus {
+  background-color: #f0f0f5;
+  color: #999;
+  cursor: default;
+}
+
+
+
+.m-nav {
+  background-color: rgba(24, 30, 34, 0.9);
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: solid 1px #000;
+}
+
+/* line 9, ../scss/module/nav.scss */
+.m-nav-logo {
+  display: inline-block;
+  background: url(../img/logo-ffffff.png) no-repeat center center;
+  width: 171px;
+  height: 50px;
+  overflow: hidden;
+}
+
+/* line 16, ../scss/module/nav.scss */
+.m-nav-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+/* line 21, ../scss/module/nav.scss */
+.m-nav-list.m-nav-main {
+  margin-left: 280px;
+}
+/* line 24, ../scss/module/nav.scss */
+.m-nav-list > li {
+  position: relative;
+  float: left;
+  margin: 0 30px;
+}
+/* line 29, ../scss/module/nav.scss */
+.m-nav-list > li > a {
+  display: inline-block;
+  padding: 15px 0;
+  line-height: 20px;
+  color: #fff;
+}
+/* line 41, ../scss/module/nav.scss */
+.m-nav-list > li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0px;
+  background-color: #fff;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 53, ../scss/module/nav.scss */
+.m-nav-list > li:hover::after, .m-nav-list > li.active::after {
+  left: 0px;
+  width: 100%;
+}
+/* line 57, ../scss/module/nav.scss */
+.m-nav-list > li:last-of-type {
+  margin-right: 0;
+}
+.f-float-left {
+  float: left;
+}
+.f-float-right {
+  float: right;
+}

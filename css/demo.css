@@ -1,0 +1,229 @@
+/* line 12, ../../scss/module/demo.scss */
+.f-body-init .m-nav {
+  background: #000;
+}
+/* line 16, ../../scss/module/demo.scss */
+.g-publish-container {
+  margin: 0 auto;
+  padding-top: 98px;
+  background: #fff;
+}
+
+/* line 22, ../../scss/module/demo.scss */
+.g-publish-set {
+  width: 920px;
+  margin: 0 auto;
+}
+
+/* line 28, ../../scss/module/demo.scss */
+.m-head h1 {
+  margin-bottom: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: normal;
+  color: black;
+}
+/* line 36, ../../scss/module/demo.scss */
+.m-head .u-bottom-line {
+  display: block;
+  width: 60px;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 45, ../../scss/module/demo.scss */
+.m-head-publish {
+  margin-bottom: 106px;
+}
+
+/* line 49, ../../scss/module/demo.scss */
+.m-head-play {
+  margin-bottom: 120px;
+}
+
+/* line 53, ../../scss/module/demo.scss */
+.m-publish-body {
+  width: 920px;
+}
+/* line 55, ../../scss/module/demo.scss */
+.m-publish-body input {
+  outline: none;
+  box-shadow: 0 0 0 #fff;
+}
+/* line 59, ../../scss/module/demo.scss */
+.m-publish-body select {
+  width: 290px;
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+.m-publish-body .u-select-disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.m-publish-body .u-input-disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+/* line 67, ../../scss/module/demo.scss */
+.m-publish-body select option {
+  color: #000;
+}
+/* line 70, ../../scss/module/demo.scss */
+.m-publish-body select.change-color {
+  color: #000;
+}
+/* line 73, ../../scss/module/demo.scss */
+.m-publish-body button {
+  outline: none;
+  border: none;
+}
+/* line 77, ../../scss/module/demo.scss */
+.m-publish-body .u-btn-preview {
+  float: right;
+  width: 102px;
+  border: 1px solid black;
+  box-shadow: none;
+  border-radius: 7px;
+  line-height: 36px;
+  text-align: center;
+  background: white;
+}
+.m-publish-body .u-btn-preview-disabled {
+  color:#ccc;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+/* line 87, ../../scss/module/demo.scss */
+.m-publish-body .u-ipt-url {
+  width: 92%;
+  border: none;
+  padding: 4px 0px;
+  height: 40px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+/*修复chrome自动填充白色背景bug*/
+.m-publish-body input:-webkit-autofill{
+  box-shadow:0 0 0 120px #fff inset;
+}
+/* line 94, ../../scss/module/demo.scss */
+.m-publish-body .u-btn-start {
+  width: 192px;
+  height: 48px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background: #42A5F6;
+}
+.m-publish-body .u-btn-disabled {
+  cursor: not-allowed;
+}
+/* line 102, ../../scss/module/demo.scss */
+.m-publish-body .m-group {
+  margin-bottom: 42px;
+}
+/* line 105, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row {
+  position: relative;
+}
+/* line 2, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row:before, .m-publish-body .m-group .m-group-row:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row:after {
+  clear: both;
+}
+/* line 108, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row .m-group-col {
+  position: relative;
+  float: left;
+}
+/* line 111, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row .m-group-col label.side-name {
+  width: 56px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+/* line 117, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row .m-group-col label.url-error {
+  position: absolute;
+  top: 100%;
+  left: 66px;
+  z-index: 100;
+  display: block;
+  color: red;
+}
+.m-publish-body .m-group .m-group-row .m-group-col .select-wrap {
+  display: inline-block;
+  /*float: left;*/
+}
+/* line 126, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row .m-group-col-mf {
+  margin-left: 54px;
+}
+/* line 129, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row .m-group-col-right {
+  float: right;
+}
+/* line 133, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row .m-group-col-full {
+  width: 100%;
+}
+/* line 136, ../../scss/module/demo.scss */
+.m-publish-body .m-group .m-group-row .m-group-col-center {
+  text-align: center;
+}
+/* line 141, ../../scss/module/demo.scss */
+.m-publish-body .m-group-last {
+  padding-top: 26px;
+}
+
+/* line 146, ../../scss/module/demo.scss */
+.g-publish-view {
+  margin: 84px 0 118px 0;
+}
+.m-play-container {
+  position: relative;
+  width: 862px;
+  height: 486px;
+  margin: 0 auto;
+}
+/* line 150, ../../scss/module/demo.scss */
+.m-publish-container {
+  position: relative;
+  width: 862px;
+  height: 486px;
+  margin: 0 auto;
+  background: url(../img/publish-bg.png) no-repeat center center;
+}
+/* line 155, ../../scss/module/demo.scss */
+.m-publish-container .show-status {
+  position: absolute;
+  padding-left: 24px;
+  margin: 24px 0 0 24px;
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  font-size: 17px;
+  color: #fff;
+}
+
+/* line 165, ../../scss/module/demo.scss */
+.m-publish-container .show-status-live {
+  background-image: url(../img/demo-status-live.png);
+}
+/* line 168, ../../scss/module/demo.scss */
+.m-publish-container .show-status-preview {
+  background-image: url(../img/demo-status-preview.png);
+}
+
+
+/*# sourceMappingURL=demo.css.map */

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>专业视频云服务提供商 - 网易视频云</title>
+    <meta name="description" content="网易视频云源于网易多年视频技术沉淀，提供基于云计算的稳定、可靠、高速的云存储、CDN、视频转码服务，为教育、娱乐、企业、金融、媒体、监控和医疗等行业提供一站式音视频解决方案。服务过网易BoBo美女主播、网易云课堂、网易云音乐、有道学堂、易信和青果摄像头等明星APP" />
+    <meta name="keywords" content="视频,云计算,云服务,视频云,在线教育,社交,视频门户,娱乐直播,企业协作,在线金融,新媒体,云监控,远程医疗" />
+    <meta name="Author" content="netease,网易" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="image/x-icon" rel="icon" href="/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/nav.css" />
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="css/footer.css" />
+    <link type="text/css" rel="stylesheet" href="js/player/video-js.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/lib/sea.js" id="seajsNode"></script>
+    <script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+
+    <script src="js/videojs/videojs/dist/video.js"></script>
+    <!-- If you'd like to support IE8 -->
+    <!-- <script src="js/player/ie8/videojs-ie8.min.js"></script> -->
+    <script src="js/player/videojs-contrib-hls.min.js"></script>
+    <script>
+        videojs.options.flash.swf = "./js/videojs/video-js-swf/dist/video-js.swf";
+    </script>
+</head>
+
+<body class="g-body f-body-init">
+    <div class="m-nav">
+        <div class="g-container">
+            <a class="m-nav-logo f-float-left" href="/">&nbsp;</a>
+            <ul class="m-nav-list m-nav-main f-float-left">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">云直播</a></li>
+            </ul>
+            <ul class="m-nav-list f-float-right">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">管理控制台</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="g-publish-container">
+        <article class="g-publish-set">
+            <div class="m-head m-head-play">
+                <h1>Web播放器DEMO</h1><button id="btn">点击</button>
+                <span class="u-bottom-line"></span>
+            </div>
+            <form id="publish-form">
+                <div class="m-publish-body">
+                    <div class="m-group">
+                        <div class="m-group-row">
+                            <div class="m-group-col m-group-col-full ">
+                                <label class="side-name" for="i-publish-url">拉流地址</label>
+                                <input type="text" class="u-ipt-url" placeholder="拉流(播放)地址" id="i-publish-url" name="publish-url">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-group m-group-last">
+                        <div class="m-group-row">
+                            <div class="m-group-col m-group-col-full m-group-col-center">
+                                <input type="button" class="u-btn-start" id="i-publish-ok" value="开始播放">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+        <article class="g-publish-view">
+            <div class="m-publish-container">
+                <video id="netEase-player" class="video-js" controls  width="860" height="486" data-setup="{}"  poster="img/publish-bg.png">
+                </video>
+            </div>
+        </article>
+    </div>
+    <div class="m-parallax m-footer" data-speed="25">
+        <div class="g-container">
+            <div class="m-footer-content">
+                <div class="m-footer-intro">
+                    <h1 class="m-footer-header">网易视频云介绍</h1>
+                    <p class="m-footer-text">网易公司（163.com）旗下的视频云服务产品，以Paas服务模式，向开发者提供音视频编解码SDK和开放API，助力APP接入音视频功能。</p>
+                </div>
+                <div class="m-footer-contact">
+                    <h1 class="m-footer-header">联系方式</h1>
+                    <p class="m-footer-text">邮箱：vcloud-ntes@188.com</p>
+                    <p class="m-footer-text">地址：杭州市滨江区网商路599号网易大厦</p>
+                </div>
+                <div class="m-footer-wechat">
+                    <h1 class="m-footer-header">微信公众号</h1>
+                    <p class="m-footer-qrcode">&nbsp;</p>
+                </div>
+            </div>
+            <div class="m-footer-logo">
+                <div class="m-footer-logo-1">&nbsp;</div>
+                <div class="m-footer-logo-split">&nbsp;</div>
+                <div class="m-footer-logo-2">&nbsp;</div>
+            </div>
+            <p class="m-copyright">&copy;&nbsp;1997-2016&nbsp;网易公司版权所有</p>
+        </div>
+    </div>
+</body>
+<script>
+    seajs.config({
+        base: './js',
+        charset: 'utf-8',
+        paths: {},
+        alias: {},
+        preload: []
+    });
+    seajs.use('player/index')
+</script>
+</html>

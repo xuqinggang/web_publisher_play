@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="local_publisher"></div>
+    <script src="../js/publisher/NetPublisher.js"></script>
+    <script>
+        publisher = new NetPublisher('local_publisher', {
+                width: 862,
+                height: 486,
+                size: '1280x960',
+                fps: 30,
+                bitrate: 1000,
+                quality: 'high',
+                wmode: 'transparent',
+                allowScriptAccess: 'always'
+            }, function() {
+
+            });
+    </script>
+</body>
+</html>

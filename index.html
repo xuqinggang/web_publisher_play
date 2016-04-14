@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>专业视频云服务提供商 - 网易视频云</title>
+    <meta name="description" content="网易视频云源于网易多年视频技术沉淀，提供基于云计算的稳定、可靠、高速的云存储、CDN、视频转码服务，为教育、娱乐、企业、金融、媒体、监控和医疗等行业提供一站式音视频解决方案。服务过网易BoBo美女主播、网易云课堂、网易云音乐、有道学堂、易信和青果摄像头等明星APP" />
+    <meta name="keywords" content="视频,云计算,云服务,视频云,在线教育,社交,视频门户,娱乐直播,企业协作,在线金融,新媒体,云监控,远程医疗" />
+    <meta name="Author" content="netease,网易" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="image/x-icon" rel="icon" href="/favicon.ico" />
+    <!-- build:css(publisher) /style/css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/dialog.css" />
+    <link type="text/css" rel="stylesheet" href="css/nav.css" />
+    <link type="text/css" rel="stylesheet" href="css/footer.css" />
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <!-- endbuild -->
+    <script type="text/javascript" src='js/lib/sea.js'></script>
+    <!-- build:js(publisher) /js/vendor.js -->
+    <script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-validate.min.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body class="g-body f-body-init">
+    <div class="m-nav">
+        <div class="g-container">
+            <a class="m-nav-logo f-float-left" href="/">&nbsp;</a>
+            <ul class="m-nav-list m-nav-main f-float-left">
+                <li><a href="/">首页</a></li>
+            </ul>
+            <ul class="m-nav-list f-float-right">
+                <li><a href="/usr/login.html">登录</a></li>
+                <li><a href="/usr/reg.html">注册</a></li>
+                <li><a href="/admin">管理控制台</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="g-publish-container">
+        <article class="g-publish-set">
+            <div class="m-head m-head-publish">
+                <h1>Web推流DEMO</h1><span id="time"></span>
+                <span class="u-bottom-line"></span>
+            </div>
+            <form action="#" id="publish-form">
+                <div class="m-publish-body">
+                    <div class="m-group">
+                        <div class="m-group-row">
+                            <div class="m-group-col">
+                                <label class="side-name" for="i-publish-camera">摄像头</label>
+                                <div class="select-wrap">
+                                    <select name="publish-camera" id="i-publish-camera" class="j-publish-camera"></select>
+                                </div>
+                            </div>
+                            <div class="m-group-col m-group-col-mf">
+                                <label class="side-name" for="i-publish-microPhone">麦克风</label>
+                                <div class="select-wrap">
+                                    <select name="publish-microPhone" id="i-publish-microPhone" class="j-publish-microPhone"></select>
+                                </div>
+                            </div>
+                            <div class="m-group-col m-group-col-right">
+                                <input class="u-btn-preview" type="button" id="i-audio-ok" name="x-audio-ok" value="预览">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-group">
+                        <div class="m-group-row">
+                            <div class="m-group-col m-group-col5">
+                                <label class="side-name" for="i-publish-defination">清晰度</label>
+                                <select name="publish-defination" id="i-publish-defination">
+                                    <option value="0">流畅</option>
+                                    <option value="1">标清</option>
+                                    <option value="2">高清</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-group">
+                        <div class="m-group-row">
+                            <div class="m-group-col m-group-col-full ">
+                                <label class="side-name" for="i-publish-url">推流地址</label>
+                                <input type="text" class="u-ipt-url" placeholder="直播推流地址" id="i-publish-url" name="publish-url">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-group m-group-last">
+                        <div class="m-group-row">
+                            <div class="m-group-col m-group-col-full m-group-col-center">
+                                <input type="button" class="u-btn-start" id="i-publish-ok" value="开始直播">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+        <article class="g-publish-view">
+            <div class="m-publish-container">
+                <p class="show-status" id="show-status"><span class="status-text"></span></p>
+                <div class="local_publisher-wrap">
+                    <div id="local_publisher"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="m-parallax m-footer" data-speed="25">
+        <div class="g-container">
+            <div class="m-footer-content">
+                <div class="m-footer-intro">
+                    <h1 class="m-footer-header">网易视频云介绍</h1>
+                    <p class="m-footer-text">网易公司（163.com）旗下的视频云服务产品，以Paas服务模式，向开发者提供音视频编解码SDK和开放API，助力APP接入音视频功能。</p>
+                </div>
+                <div class="m-footer-contact">
+                    <h1 class="m-footer-header">联系方式</h1>
+                    <p class="m-footer-text">邮箱：vcloud-ntes@188.com</p>
+                    <p class="m-footer-text">地址：杭州市滨江区网商路599号网易大厦</p>
+                </div>
+                <div class="m-footer-wechat">
+                    <h1 class="m-footer-header">微信公众号</h1>
+                    <p class="m-footer-qrcode">&nbsp;</p>
+                </div>
+            </div>
+            <div class="m-footer-logo">
+                <div class="m-footer-logo-1">&nbsp;</div>
+                <div class="m-footer-logo-split">&nbsp;</div>
+                <div class="m-footer-logo-2">&nbsp;</div>
+            </div>
+            <p class="m-copyright">&copy;&nbsp;1997-2016&nbsp;网易公司版权所有</p>
+        </div>
+    </div>
+    <!-- build:js(publisher) /js/nePublisher.js -->
+    <script type="text/javascript" src='./js/publisher/nePublisher.js'></script>
+    <!-- endbuild -->
+    <!-- <script type="text/javascript" src='./js/publisher/index.js'></script> -->
+    <script type="text/javascript">
+    seajs.config({
+        base: './js',
+        charset: 'utf-8',
+        paths: {},
+        alias: {},
+        preload: []
+    });
+    seajs.use('publisher/index');
+    </script>
+    <script>
+    /**
+     * [description]
+     * @param  {[string]} ) 容器id字符串
+     * @param {[object]}   推流的配置选项
+     * @param {[func]}   推流准备就绪的回调函数
+     */
+    /* 简单的演示实例
+    var publisher = new NetPublisher('local_publisher', {
+        url: 'rtmp://p1.live.126.net/live/06f7fc0d61d84470853ba29cf484247c?wsSecret=8f8081be941b294fc6b3dda04b0932f7&wsTime=1457421386',
+        width: 862,
+        height: 446,
+        size: '1280x960',
+        fps: 30,
+        bitrate: 1000,
+        quality: 'high',
+        wmode: 'opaque',
+        allowScriptAccess: 'always'
+    }, function () {
+        var that = this; // this指向推流对象
+        // that.getCameraList()  获得摄像头列表
+        // that.getMicroPhoneList(); 获得麦克风列表
+        // that.setDefination({fps: 50, bitrate:600});
+        // that.getSDKVersion() 返回版本号
+        $('#start').on('click', function () {
+            
+            // * @param  {[string]} ) 推流url地址
+            // * @param {[object]}   推流的配置选项
+            //* @param {[func]}   推流过程中发生错误的回调函数 参数（错误代码,错误信息)
+             
+            //that.setCamera(1); 设置摄像头
+            //that.setMicrophone(2); 设置麦克风
+            that.startPublish('rtmp://p1.live.126.net/live/06f7fc0d61d84470853ba29cf484247c?wsSecret=8f8081be941b294fc6b3dda04b0932f7&wsTime=1457421386', 
+                {
+                    cameraIndex: 1,
+                    microphoneIndex: 2,
+                    size: '960x860',
+                    fps: 40,
+                    bitrate: 700
+                }, function (code, desc) {
+                    console.log(code, desc);
+                });
+        });
+        $('#stop').on('click', function () {
+            that.stopPublish();
+            console.log(that.getSDKVersion())
+        })
+    });
+    */
+    </script>
+</body>
+
+</html>
